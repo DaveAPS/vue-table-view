@@ -77,6 +77,7 @@ How to use this component with any page.
 ````
 
 * Attributes
+  
   1)  :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
 ````
     Example-
