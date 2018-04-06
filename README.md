@@ -1,26 +1,26 @@
 # TableView
-This will help to visualize large data sets in tabular format with pagination,sorting by column and search records on all column or with selected column. Also provieds option to customize layouts and feature as per the application requirments.
+This will help to visualize large data sets in tabular format with pagination, sorting by column and search records on all columns or with selected column. It also provides option to customize layouts and features as per the application requirements.
 
 # Features
 * Node JS, VueJs, Vue-router
-* axios - for create promised based client interface
+* axios - for create promise based client interface
 * classnames - simple javascript utility for conditionally joining classNames together.
-* autoprefixer - Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
+* autoprefixer - Write your CSS rules without vendor prefixes (in fact, forget about them entirely)
 * Karma, Mocha, chai, sinon - for unit test  
-* eslint - is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions.
-* webpack - for bundle js, css and assets.
+* eslint - this is a tool for identifying and reporting based on patterns found in ECMAScript/JavaScript code. In many way, it is similar to JSLint and JSHint with a few exceptions.
+* webpack - for bundling js, css and assets.
 
 ## Components
-Appliction is mainlly using two components to visualize large sets of data in tabular format.
+Appliction is mainly using two components to visualize large sets of data in tabular format.
 
 * Pagination Component
 * Tabale View Component
 
 ### About Pagination Component
-This component shows the pages and provide the functionality to navigate.
+This component shows the pages and provides the functionality to navigate.
     
 How to use this component with any page.
-* Import the pagination componets and pass the all require values as its attribute like below sample.
+* Import the pagination componet and pass all the required values as its attribute like below sample.
  
     <script>
         import Pagination from '@/components/Pagination.vue';
@@ -37,12 +37,12 @@ How to use this component with any page.
     </template>
 ````
 * Attributes:-
-    1) :current-page # current page number from you want to start.
+    1) :current-page # current page number from where you want to start.
     2) :total-pages # Total number of pages
-    3) :items-per-page # Number of item need to be shown on a page
-    4) @page-changed # call a function on click page number, pagination navigation control
-    6) :paginationClass # class name which use to set the look and feel of the pagination controls
-    7) :navigationText # This is optional and help to set text of navigation controls
+    3) :items-per-page # Number of items needed to be shown on a page
+    4) @page-changed # call a function on click of page number in pagination navigation control
+    6) :paginationClass # class name which is used to set the look and feel of the pagination controls
+    7) :navigationText # This is optional and helps to set text of navigation controls
 ````   
     {
         first:{text:'<<',title:'First',arialabel:'First'},
@@ -53,11 +53,11 @@ How to use this component with any page.
  ````        
 
 # About Table View Component
-This component provides the complete feature to show the data with pagination, sorting and filtring option.
+This component provides the complete feature to show the data with pagination, sorting and filtring options.
 
 How to use this component with any page.
 
-* Import the TableView componets and pass the all require values as its attribute like below sample.
+* Import the TableView componet and pass all the required values as its attributes like below sample.
 
     <script>
         import TableView from '@/components/TableView.vue';
@@ -78,7 +78,7 @@ How to use this component with any page.
 
 * Attributes
   
- 1)  :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
+ 1)  :labels #All the column list which you want to show in table grid, it provides the following options to set its layout and column features. 
 ````
     Example-
       
@@ -90,10 +90,11 @@ How to use this component with any page.
           {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
           {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
           {key:'population',sortable:true,display:'Population',itemclass:'textright',headclass:''}];
-
+          
+          Properties are as follows-
           a) key -- column name as in the data list object
           b) sortable -- true or false to apply sorting on the column
-          c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
+          c) display -- What the column heading needs to be shown, if display name is not provided, show the key name as heading
           d) itemclass -- css class name to set look & feel of the perticullar column item
           e) headclass --  css class name to set look & feel of the perticullar column heading
           
@@ -102,19 +103,19 @@ How to use this component with any page.
  2)  :sortablekey # Set default sortable key column name.
  3)  :className # apply your class to set look & feel of the table as parent css class.
  4)  :dataorder # default order of the sortable column as asc or desc.
- 5)  :paginationOption # provide the pagination complete configuration object as below format
+ 5)  :paginationOption # provide the complete pagination configuration object in below format
    
     paginationOption =     {position:'top',showPagination:true,itemsPerPage:10,navigationText:self.navigationText,paginationClass:'paginationClass'}; 
         Properties are as follows-
         a) position -- set the position of the navigation controls along with table grid.
-            value as -   'top' set at top of the table.
-                        'bottom' set at bottom of the table. 
-                        'both' visible at both the position of table top and bottom.
-        b) showPagination -- by default it is true, if you do not want to show pagination then set as false.
-        c) itemsPerPage -- Number of item need to be shown on a page.
-        d) navigationText -- This is optional and help to set text of navigation controls as above defined with about pagination component.
-        e) paginationClass -- class name which use to set the look and feel of the pagination controls.
- 6) :dataSets -- pass the datasets complete array object, which need to to be load on table grid.
+            value as -   'top' to set at top of the table.
+                        'bottom' to set at bottom of the table. 
+                        'both' to make visible at both the position of table top and bottom.
+        b) showPagination -- by default it is true, if you do not want to show pagination, set as false.
+        c) itemsPerPage -- Number of item needs to be shown on a page.
+        d) navigationText -- This is optional and helps to set text of navigation controls as above defined with pagination component.
+        e) paginationClass -- class name which is used to set the look and feel of the pagination controls.
+ 6) :dataSets -- pass the datasets complete array object, which needs to to be loaded on table grid.
  7) :showTotalPages -- show and hide the total number of page text along with table grid.
  8) :showFilter -- include and exclude filter functionality on table grid. By default filter with apply on all columns.
  9) :showSearch -- include and exclude search functionality on table grid.
@@ -147,7 +148,7 @@ npm run e2e
 npm test
 ```
 ## Dependencies
-Webpack (v2.3) is a bundler, which combines the various JavaScript, CSS, HTML (and other) files and makes them ready to be handled by the client.
+Webpack (v2.3) is a bundler, which combines various JavaScript, CSS, HTML (and other) files and makes them ready to be handled by the client.
 
 Babel (v6.22) is a compiler for ECMAScript 6 to ECMAScript 5. These are different JavaScript standards and currently browsers are not able to understand all of ECMAScript 6 and so it needs to be converted.
 
@@ -159,7 +160,7 @@ Chai (v4.1) is an assertion library which can be used with Mocha.
 
 ```
 ## Note: 
-Application using Dummy data having *.json files to represent charts as dynamic style. use your one API link with the required json data format response.
+Application using Dummy data having *.json files to represent charts as dynamic style. Use your one API link with the required json data format response.
 
 Change base url from http-common.js file.
 
