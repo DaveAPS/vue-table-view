@@ -16,13 +16,12 @@ Appliction is mainlly using two components to visualize large sets of data in ta
 * Pagination Component
 * Tabale View Component
 
-# About Pagination Component
-    This component shows the pages and provide the functionality to navigate.
+### About Pagination Component
+This component shows the pages and provide the functionality to navigate.
     
-    How to use this component with any page.
-    * Import the pagination componets and pass the all require values as its attribute like below sample.
- ```
- ```
+How to use this component with any page.
+* Import the pagination componets and pass the all require values as its attribute like below sample.
+ 
         <script>
             import Pagination from '@/components/Pagination.vue';
         </script>
@@ -36,9 +35,8 @@ Appliction is mainlly using two components to visualize large sets of data in ta
                 :navigationText="paginationOption.navigationText">
             </pagination>
         </template>
-```
-```
-    * Attributes:-
+
+* Attributes:-
         1) :current-page # current page number from you want to start.
         2) :total-pages # Total number of pages
         3) :items-per-page # Number of item need to be shown on a page
@@ -46,16 +44,16 @@ Appliction is mainlly using two components to visualize large sets of data in ta
         6) :paginationClass # class name which use to set the look and feel of the pagination controls
         7) :navigationText # This is optional and help to set text of navigation controls
 
-            ```
+           
             {
                 first:{text:'<<',title:'First',arialabel:'First'},
                 last:{text:'>>',title:'Last',arialabel:'Last'},
                 next:{text:'>',title:'Next',arialabel:'Next',class:'btnPageNav'},
                 previous:{text:'<',title:'Previous',arialabel:'Previous',class:'btnPageNav'}
             };
-            ```
-    ```
-# About Pagination Component
+         
+
+### About Pagination Component
     
 
 
