@@ -79,14 +79,14 @@ How to use this component with any page.
 * Attributes
     1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
 ````    
-    example-
-    Let you have records with following format then how you can create label list.
+        example-
+        Let you have records with following format then how you can create label list.
 
-    [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},
+        [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},
 
-    ]
+        ]
 
-    labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
+        labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
             {key:'capital',sortable:true,display:'Capital',itemclass:'textleft',headclass:''},
             {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
             {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
