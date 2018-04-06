@@ -43,14 +43,14 @@ How to use this component with any page.
     4) @page-changed # call a function on click page number, pagination navigation control
     6) :paginationClass # class name which use to set the look and feel of the pagination controls
     7) :navigationText # This is optional and help to set text of navigation controls
-   
-        {
-            first:{text:'<<',title:'First',arialabel:'First'},
-            last:{text:'>>',title:'Last',arialabel:'Last'},
-            next:{text:'>',title:'Next',arialabel:'Next',class:'btnPageNav'},
-            previous:{text:'<',title:'Previous',arialabel:'Previous',class:'btnPageNav'}
-        };
-         
+````   
+    {
+        first:{text:'<<',title:'First',arialabel:'First'},
+        last:{text:'>>',title:'Last',arialabel:'Last'},
+        next:{text:'>',title:'Next',arialabel:'Next',class:'btnPageNav'},
+        previous:{text:'<',title:'Previous',arialabel:'Previous',class:'btnPageNav'}
+    };
+ ````        
 
 ### About Pagination Component
     
