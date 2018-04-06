@@ -25,17 +25,17 @@ How to use this component with any page.
     <script>
         import Pagination from '@/components/Pagination.vue';
     </script>
-    .....
-      <template>
-          <pagination :current-page="pageOne.currentPage"
-              :total-pages="pageOne.totalPages"
-              :items-per-page="pageOne.itemsPerPage"
-              @page-changed="pageOneChanged" 
-              :paginationClass="paginationOption.paginationClass"
-              :navigationText="paginationOption.navigationText">
-          </pagination>
-      </template>
-
+````
+    <template>
+        <pagination :current-page="pageOne.currentPage"
+            :total-pages="pageOne.totalPages"
+            :items-per-page="pageOne.itemsPerPage"
+            @page-changed="pageOneChanged" 
+            :paginationClass="paginationOption.paginationClass"
+            :navigationText="paginationOption.navigationText">
+        </pagination>
+    </template>
+````
 * Attributes:-
     1) :current-page # current page number from you want to start.
     2) :total-pages # Total number of pages
