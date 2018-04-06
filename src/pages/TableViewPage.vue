@@ -95,13 +95,14 @@
         border-color: #aaa;
         width: auto;
         border: .1em solid #aaa;
+        height: 27px;
 }
 .control .filter{
     background-color: white;
     padding: 3px;
     border: .1em solid #aaa;
     border-radius: 5px;
-    height: 38px;
+    height: 27px;
 
 }
 .control .filter option:checked, 
