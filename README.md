@@ -1,27 +1,4 @@
-# Charts
 
-This application is created to understand and develop chart components using dynamic data from rest API.
-This application covers how to create promise based Rest Client and use it inside different types of chart components which require dynamic data at runtime.
-This application also covers all types of chart components which are as below.
-
-* Bar Chart
-* Line Chart
-* Pie Chart
-* Bubble Chart
-* Polar Chart
-* Radar Chart
-* Doughnut Chart
-* Scatter Chart
-* Mixed Chart
-
-# Features
-* Node JS, VueJs, Vue-chartjs, Vue-router
-* axios - for create promised based client interface
-* classnames - simple javascript utility for conditionally joining classNames together.
-* autoprefixer - Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
-* Karma, Mocha, chai, sinon - for unit test  
-* eslint - is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions.
-* webpack - for bundle js, css and assets.
 
 ## Build Setup
 
