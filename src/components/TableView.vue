@@ -24,11 +24,11 @@
             <tr v-if="labels">
                 <th v-for="l in labels" :class="l.headclass">
                     <a v-if="l.sortable" href="javascript:void(0);" @click="sortByKey(l.key)">
-                        {{l.display}} 
+                        {{l.display? l.display : l.key}} 
                         <i v-if="l.sortable && !dataorderFn && sortablekeyFn===l.key" class="up"></i>
                         <i v-if="l.sortable && dataorderFn && sortablekeyFn===l.key" class="down"></i>
                     </a>
-                    <span v-if="!l.sortable">{{l.display}}</span>
+                    <span v-if="!l.sortable">{{l.display? l.display : l.key}}</span>
                 </th>
             </tr>
         </thead>
