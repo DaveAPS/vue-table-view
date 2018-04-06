@@ -21,7 +21,8 @@ Appliction is mainlly using two components to visualize large sets of data in ta
     
     How to use this component with any page.
     * Import the pagination componets and pass the all require values as its attribute like below sample.
-    ```
+ ```
+ ```
         <script>
             import Pagination from '@/components/Pagination.vue';
         </script>
@@ -35,8 +36,8 @@ Appliction is mainlly using two components to visualize large sets of data in ta
                 :navigationText="paginationOption.navigationText">
             </pagination>
         </template>
-
-    ```
+```
+```
     * Attributes:-
         1) :current-page # current page number from you want to start.
         2) :total-pages # Total number of pages
