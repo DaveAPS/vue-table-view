@@ -77,7 +77,7 @@ How to use this component with any page.
 ````
 
 * Attributes
-    1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
+  1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
 ````    
       Example-
       
@@ -95,6 +95,8 @@ How to use this component with any page.
           c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
           d) itemclass -- css class name to set look & feel of the perticullar column item
           e) headclass --  css class name to set look & feel of the perticullar column heading
+````
+````
 ````
   2) :sortablekey # Set default sortable key column name.
   3) :className # apply your class to set look & feel of the table as parent css class.
