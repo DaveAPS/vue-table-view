@@ -96,10 +96,10 @@ How to use this component with any page.
           d) itemclass -- css class name to set look & feel of the perticullar column item
           e) headclass --  css class name to set look & feel of the perticullar column heading
 ````
-2) :sortablekey # Set default sortable key column name.
-3) :className # apply your class to set look & feel of the table as parent css class.
-4) :dataorder # default order of the sortable column as asc or desc.
-5) :paginationOption # provide the pagination complete configuration object as below format
+  2) :sortablekey # Set default sortable key column name.
+  3) :className # apply your class to set look & feel of the table as parent css class.
+  4) :dataorder # default order of the sortable column as asc or desc.
+  5) :paginationOption # provide the pagination complete configuration object as below format
    
    paginationOption =     {position:'top',showPagination:true,itemsPerPage:10,navigationText:self.navigationText,paginationClass:'paginationClass'}; 
         Properties are as follows-
@@ -111,10 +111,10 @@ How to use this component with any page.
         c) itemsPerPage -- Number of item need to be shown on a page.
         d) navigationText -- This is optional and help to set text of navigation controls as above defined with about pagination component.
         e) paginationClass -- class name which use to set the look and feel of the pagination controls.
-6) :dataSets -- pass the datasets complete array object, which need to to be load on table grid.
-7) :showTotalPages -- show and hide the total number of page text along with table grid.
-8) :showFilter -- include and exclude filter functionality on table grid. By default filter with apply on all columns.
-9) :showSearch -- include and exclude search functionality on table grid.
+  6) :dataSets -- pass the datasets complete array object, which need to to be load on table grid.
+  7) :showTotalPages -- show and hide the total number of page text along with table grid.
+  8) :showFilter -- include and exclude filter functionality on table grid. By default filter with apply on all columns.
+  9) :showSearch -- include and exclude search functionality on table grid.
 
 
 
