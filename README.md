@@ -59,11 +59,10 @@ How to use this component with any page.
 
 * Import the TableView componets and pass the all require values as its attribute like below sample.
 
-    ````
     <script>
         import TableView from '@/components/TableView.vue';
     </script>
-
+````
     <table-view 
         :labels="labels" 
         :sortablekey="sortkey" 
@@ -75,30 +74,31 @@ How to use this component with any page.
         :showFilter="true"
         :showSearch="true">
     </table-view>
-    ````
-    *Attributes
-        1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
-    ````    
-        example-
-        Let you have records with following format then how you can create label list.
+````
 
-        [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},
+* Attributes
+    1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
+````    
+    example-
+    Let you have records with following format then how you can create label list.
 
-        ]
+    [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},
 
-        labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
-                {key:'capital',sortable:true,display:'Capital',itemclass:'textleft',headclass:''},
-                {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
-                {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
-                {key:'population',sortable:true,display:'Population',itemclass:'textright',headclass:''}];
+    ]
 
-        a) key -- column name as in the data list object
-        b) sortable -- true or false to apply sorting on the column
-        c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
-        d) itemclass -- css class name to set look & feel of the perticullar column item
-        e) headclass --  css class name to set look & feel of the perticullar column heading
-        
-    ````
+    labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
+            {key:'capital',sortable:true,display:'Capital',itemclass:'textleft',headclass:''},
+            {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
+            {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
+            {key:'population',sortable:true,display:'Population',itemclass:'textright',headclass:''}];
+
+    a) key -- column name as in the data list object
+    b) sortable -- true or false to apply sorting on the column
+    c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
+    d) itemclass -- css class name to set look & feel of the perticullar column item
+    e) headclass --  css class name to set look & feel of the perticullar column heading
+
+````
 
 
 ## Build Setup
