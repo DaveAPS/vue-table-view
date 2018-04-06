@@ -1,3 +1,14 @@
+# TableView
+This will help to visualize large data sets in tabular format with pagination,sorting by column and search records on all column or with selected column. Also provieds option to customize layouts and feature as per the application requirments.
+
+# Features
+* Node JS, VueJs, Vue-router
+* axios - for create promised based client interface
+* classnames - simple javascript utility for conditionally joining classNames together.
+* autoprefixer - Write your CSS rules without vendor prefixes (in fact, forget about them entirely):
+* Karma, Mocha, chai, sinon - for unit test  
+* eslint - is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions.
+* webpack - for bundle js, css and assets.
 
 
 ## Build Setup
@@ -47,7 +58,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 ### Demo
 
-   * Application live demo [https://nostalgic-northcutt-0522ad.netlify.com](https://nostalgic-northcutt-0522ad.netlify.com).
+   * Application live demo [https://kind-dijkstra-569799.netlify.com](https://kind-dijkstra-569799.netlify.com).
 
 
 ### License
