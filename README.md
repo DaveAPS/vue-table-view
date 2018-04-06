@@ -79,31 +79,29 @@ How to use this component with any page.
 * Attributes
     1) :labels #All the column list which you wants to show in table grid, its provide the following option to set its layout and column features. 
 ````    
-        example-
-        Let you have records with following format then how you can create label list.
+      Example-
+      
+      Let you have records with following format then how you can create label list.
 
-        [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},
+      [{"name":"India","capital":"New Delhi","region":"Asia","subregion":"Southern Asia","population":1295210000,"cioc":"IND"},.... ]
+      labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
+          {key:'capital',sortable:true,display:'Capital',itemclass:'textleft',headclass:''},
+          {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
+          {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
+          {key:'population',sortable:true,display:'Population',itemclass:'textright',headclass:''}];
 
-        ]
-
-        labels = [{key:'name',sortable:true,display:'Country Name',itemclass:'textleft',headclass:''},
-            {key:'capital',sortable:true,display:'Capital',itemclass:'textleft',headclass:''},
-            {key:'region',sortable:true,display:'Region',itemclass:'textleft',headclass:''},
-            {key:'subregion',sortable:true,display:'Sub Region',itemclass:'textleft',headclass:''},
-            {key:'population',sortable:true,display:'Population',itemclass:'textright',headclass:''}];
-
-        a) key -- column name as in the data list object
-        b) sortable -- true or false to apply sorting on the column
-        c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
-        d) itemclass -- css class name to set look & feel of the perticullar column item
-        e) headclass --  css class name to set look & feel of the perticullar column heading
-    2) :sortablekey # Set default sortable key column name.
-    3) :className # apply your class to set look & feel of the table as parent css class.
-    4) :dataorder # default order of the sortable column as asc or desc.
-    5) :paginationOption # provide the pagination complete configuration object as below format
-
-        paginationOption = {position:'top',showPagination:true,itemsPerPage:10,navigationText:self.navigationText,paginationClass:'paginationClass'}; 
-
+          a) key -- column name as in the data list object
+          b) sortable -- true or false to apply sorting on the column
+          c) display -- What the column hedding need to be shown, dispaly name if not provided then show the key name as heading
+          d) itemclass -- css class name to set look & feel of the perticullar column item
+          e) headclass --  css class name to set look & feel of the perticullar column heading
+````
+2) :sortablekey # Set default sortable key column name.
+3) :className # apply your class to set look & feel of the table as parent css class.
+4) :dataorder # default order of the sortable column as asc or desc.
+5) :paginationOption # provide the pagination complete configuration object as below format
+   
+   paginationOption =     {position:'top',showPagination:true,itemsPerPage:10,navigationText:self.navigationText,paginationClass:'paginationClass'}; 
         Properties are as follows-
         a) position -- set the position of the navigation controls along with table grid.
             value as -   'top' set at top of the table.
@@ -113,14 +111,12 @@ How to use this component with any page.
         c) itemsPerPage -- Number of item need to be shown on a page.
         d) navigationText -- This is optional and help to set text of navigation controls as above defined with about pagination component.
         e) paginationClass -- class name which use to set the look and feel of the pagination controls.
+6) :dataSets -- pass the datasets complete array object, which need to to be load on table grid.
+7) :showTotalPages -- show and hide the total number of page text along with table grid.
+8) :showFilter -- include and exclude filter functionality on table grid. By default filter with apply on all columns.
+9) :showSearch -- include and exclude search functionality on table grid.
 
-    6) :dataSets -- pass the datasets complete array object, which need to to be load on table grid.
-    7) :showTotalPages -- show and hide the total number of page text along with table grid.
-    8) :showFilter -- include and exclude filter functionality on table grid. By default filter with apply on all columns.
-    9) :showSearch -- include and exclude search functionality on table grid.
 
-
-````
 
 
 ## Build Setup
