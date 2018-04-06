@@ -1,7 +1,7 @@
 {
-  "name": "charts",
+  "name": "TableView",
   "version": "1.0.0",
-  "description": "charts",
+  "description": "Table view use to visualize large data sets in tabular format with pagination,sorting by column and search records on all column or with selected column.",
   "author": "Madan",
   "private": true,
   "scripts": {
@@ -17,14 +17,12 @@
     "axios": "^0.17.1",
     "bootstrap": "4.0.0-beta.2",
     "bootstrap-vue": "^1.0.2",
-    "chart.js": "^2.7.1",
     "classnames": "^2.2.5",
     "es6-promise": "^4.2.4",
     "font-awesome": "^4.7.0",
     "jquery": "^1.9.1",
     "mdbootstrap": "^4.4.3",
     "vue": "^2.5.2",
-    "vue-chartjs": "^3.1.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -116,11 +114,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mlprajapati/vue-chart-poc.git"
+    "url": "git+https://github.com/mlprajapati/vue-table-view.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mlprajapati/vue-chart-poc.git/issues"
+    "url": "https://github.com/mlprajapati/vue-table-view.git/issues"
   },
-  "homepage": "https://github.com/mlprajapati/vue-chart-poc.git#readme"
+  "homepage": "https://github.com/mlprajapati/vue-table-view.git#readme"
 }
