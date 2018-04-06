@@ -22,35 +22,34 @@ This component shows the pages and provide the functionality to navigate.
 How to use this component with any page.
 * Import the pagination componets and pass the all require values as its attribute like below sample.
  
-        <script>
-            import Pagination from '@/components/Pagination.vue';
-        </script>
-        .....
-        <template>
-            <pagination :current-page="pageOne.currentPage"
-                :total-pages="pageOne.totalPages"
-                :items-per-page="pageOne.itemsPerPage"
-                @page-changed="pageOneChanged" 
-                :paginationClass="paginationOption.paginationClass"
-                :navigationText="paginationOption.navigationText">
-            </pagination>
-        </template>
+    <script>
+        import Pagination from '@/components/Pagination.vue';
+    </script>
+    .....
+    <template>
+        <pagination :current-page="pageOne.currentPage"
+            :total-pages="pageOne.totalPages"
+            :items-per-page="pageOne.itemsPerPage"
+            @page-changed="pageOneChanged" 
+            :paginationClass="paginationOption.paginationClass"
+            :navigationText="paginationOption.navigationText">
+        </pagination>
+    </template>
 
 * Attributes:-
-        1) :current-page # current page number from you want to start.
-        2) :total-pages # Total number of pages
-        3) :items-per-page # Number of item need to be shown on a page
-        4) @page-changed # call a function on click page number, pagination navigation control
-        6) :paginationClass # class name which use to set the look and feel of the pagination controls
-        7) :navigationText # This is optional and help to set text of navigation controls
-
-           
-            {
-                first:{text:'<<',title:'First',arialabel:'First'},
-                last:{text:'>>',title:'Last',arialabel:'Last'},
-                next:{text:'>',title:'Next',arialabel:'Next',class:'btnPageNav'},
-                previous:{text:'<',title:'Previous',arialabel:'Previous',class:'btnPageNav'}
-            };
+    1) :current-page # current page number from you want to start.
+    2) :total-pages # Total number of pages
+    3) :items-per-page # Number of item need to be shown on a page
+    4) @page-changed # call a function on click page number, pagination navigation control
+    6) :paginationClass # class name which use to set the look and feel of the pagination controls
+    7) :navigationText # This is optional and help to set text of navigation controls
+   
+        {
+            first:{text:'<<',title:'First',arialabel:'First'},
+            last:{text:'>>',title:'Last',arialabel:'Last'},
+            next:{text:'>',title:'Next',arialabel:'Next',class:'btnPageNav'},
+            previous:{text:'<',title:'Previous',arialabel:'Previous',class:'btnPageNav'}
+        };
          
 
 ### About Pagination Component
